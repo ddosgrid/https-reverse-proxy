@@ -5,6 +5,5 @@ services:
       - ./cert:/etc/nginx/certs
     ports:
      - "443:443"
-    environment:
     build:
       context: .
