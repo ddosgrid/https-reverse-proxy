@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    volumes:
+      - ./cert:/etc/nginx/certs
+    ports:
+     - "443:443"
+    environment:
+    build:
+      context: .
